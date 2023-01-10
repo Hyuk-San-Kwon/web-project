@@ -1,5 +1,5 @@
 import datetime
-
+# 데이터 도식화
 from pydantic import BaseModel, validator
 
 from domain.answer.answer_schema import Answer

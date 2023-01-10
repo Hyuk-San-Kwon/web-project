@@ -38,8 +38,8 @@ class Answer(Base):
     content = Column(Text, nullable=False)
     create_date = Column(DateTime, nullable=False)
     question_id = Column(Integer, ForeignKey("question.id"))
-    question = relationship("Question", backref="answers")
-    user_id = Column(Integer, ForeignKey("user.id"), nullable=True)
+    question = relationship("Question", backref="answers") # 질문 외부키로 연결
+    user_id = Column(Integer, ForeignKey("user.id"), nullable=True)  
     user = relationship("User", backref="answer_users")
     modify_date = Column(DateTime, nullable=True)
     voter = relationship('User', secondary=answer_voter, backref='answer_voters')
