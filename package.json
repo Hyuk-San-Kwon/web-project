@@ -1,6 +1,10 @@
 {
   "dependencies": {
+    "google-login-svelte": "^0.0.1",
     "moment": "^2.29.4",
     "qs": "^6.11.0"
+  },
+  "devDependencies": {
+    "@beyonk/svelte-social-auth": "^3.0.0"
   }
 }
